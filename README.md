@@ -5,7 +5,7 @@
 ## Deskripsi
 ArchanaBerry Express adalah library web minimalis tetapi fitur juga lengkap dan berbasis C++ yang mirip dengan Express.js di Node.js. Library ini memungkinkan Anda untuk membuat server web dengan mudah, menangani rute, dan mendukung multithreading. Dengan menggunakan Boost.Beast dan Boost.Asio, ArchanaBerry Express menawarkan kinerja yang tinggi dan fleksibilitas untuk pengembangan aplikasi web.
 
-  <img class="archanaberrydev" src="archanaberry/berryexpress.png" style="position: absolute; transform: rotate(45deg);" alt="SVG Image">
+![Archana Berry dan Archie Wheatgrace](archanaberry/berryexpress.png)
 
 ## Informasi
 - **Penulis:** Archana Berry
