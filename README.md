@@ -38,41 +38,42 @@ ArchanaBerry Express adalah library web minimalis tetapi fitur juga lengkap dan 
 3. **Membuat Rute**
    Anda dapat membuat rute untuk menangani permintaan HTTP seperti contoh berikut:
 
-   ```cpp
-   #include "berry_express.hpp"
+```cpp
+#include "../libarchanaberry/archanaberry_express.hpp"
+#include <string>
 
-   int main() {
-       archanaberry::express::AppWeb appweb("127.0.0.1", 8080);
+int main() {
+    archanaberry::express::AppWeb app;
 
-       appweb.route("/", [](auto& req, auto& res) {
-           res.body() = R"(
-               <!DOCTYPE html>
-               <html lang="en">
-               <head>
-                   <meta charset="UTF-8">
-                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                   <title>Home</title>
-                   <style>
-                       body { font-family: Arial, sans-serif; }
-                       h1 { color: #333; }
-                   </style>
-               </head>
-               <body>
-                   <h1>Welcome to the Home Page</h1>
-                   <p>This is a minimalistic C++ web server.</p>
-                   <script>
-                       console.log("JavaScript is running.");
-                   </script>
-               </body>
-               </html>
-           )";
-       });
+    app.get("/", [](boost::asio::ip::tcp::iostream& stream) {
+        stream << "HTTP/1.1 200 OK\r\n";
+        stream << "Content-Type: text/html\r\n";
+        stream << "Connection: close\r\n\r\n";
+        stream << R"(
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Hello, World!</title>
+                <style>
+                    body { font-family: Arial, sans-serif; }
+                </style>
+            </head>
+            <body>
+                <h1>Hello, World!</h1>
+                <script>
+                    console.log('Hello from JavaScript');
+                </script>
+            </body>
+            </html>
+        )";
+        stream.flush();
+    });
 
-       appweb.run();
+    app.listen(8080);
 
-       return 0;
-   }
-   ```
+    return 0;
+}
+```
 
 ## Screenshot
 ![Screenshot 1](https://via.placeholder.com/800x400.png?text=Screenshot+1)
