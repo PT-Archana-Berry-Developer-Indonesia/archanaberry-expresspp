@@ -87,17 +87,21 @@ int main() {
 
 ## Status Fitur yang Akan Dikembangkan
 
+* ✅ Selesai
+* ❎ Belum diperbaiki
+
 | Fitur                      | Status          |
 |----------------------------|-----------------|
-| Routing dasar              | Selesai         |
-| Dukungan multithreading    | Selesai         |
-| Dekomposisi HTML/CSS/JS    | Selesai         |
+| Routing dasar              | ✅ |
+| Dukungan multithreading    | ✅ |
+| Dekomposisi HTML/CSS/JS    | ✅ |
+| Dukungan file statis semua format | ✅ |
 | Middleware                 | Dalam Pengembangan |
 | Pengelolaan Static Files   | Dalam Pengembangan |
-| Template Engine            | Akan Datang     |
-| Pengelolaan Session/Cookie | Akan Datang     |
-| Dokumentasi Lengkap        | Akan Datang     |
-| Contoh Proyek              | Akan Datang     |
+| Template Engine            | ❎ |
+| Pengelolaan Session/Cookie | ❎ |
+| Dokumentasi Lengkap        | ❎ |
+| Contoh Proyek              | ❎ |
 
 ## Kontribusi
 Kami sangat terbuka untuk kontribusi dari komunitas. Silakan buat pull request atau buka isu baru di repositori GitHub kami jika Anda menemukan bug atau memiliki fitur yang ingin ditambahkan.
