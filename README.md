@@ -20,7 +20,7 @@ ArchanaBerry Express adalah library web minimalis tetapi fitur juga lengkap dan 
 
 ## Cara Pakai
 1. **Instalasi Boost Library**
-   Pastikan Boost library yang mencakup Boost.Beast dan Boost.Asio sudah terinstal di sistem Anda. Anda dapat menginstal Boost library menggunakan manajer paket sistem atau mengunduh dan mengkompilasinya dari situs resmi Boost ![steinwurf](https://github.com/steinwurf/boost)
+   Pastikan Boost library yang mencakup Boost.Beast dan Boost.Asio sudah terinstal di sistem Anda. Anda dapat menginstal Boost library menggunakan manajer paket sistem atau mengunduh dan mengkompilasinya dari situs resmi Boost [steinwurf](https://github.com/steinwurf/boost)
 
    ```bash
    git clone https://github.com/steinwurf/boost
