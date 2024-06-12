@@ -20,9 +20,14 @@ ArchanaBerry Express adalah library web minimalis tetapi fitur juga lengkap dan 
 
 ## Cara Pakai
 1. **Instalasi Boost Library**
-   Pastikan Boost library yang mencakup Boost.Beast dan Boost.Asio sudah terinstal di sistem Anda. Anda dapat menginstal Boost library menggunakan manajer paket sistem atau mengunduh dan mengkompilasinya dari situs resmi Boost.
+   Pastikan Boost library yang mencakup Boost.Beast dan Boost.Asio sudah terinstal di sistem Anda. Anda dapat menginstal Boost library menggunakan manajer paket sistem atau mengunduh dan mengkompilasinya dari situs resmi Boost ![steinwurf](https://github.com/steinwurf/boost)
 
-2. **Kompilasi dan Menjalankan Server**
+   ```bash
+   git clone https://github.com/steinwurf/boost
+   sudo mv boost/boost /usr/include/
+   ```
+
+3. **Kompilasi dan Menjalankan Server**
    Buat file `main.cpp`, `archanaberry.hpp`, dan `archanaberry.cpp` dengan konten seperti yang dijelaskan sebelumnya. Kemudian kompilasi dengan perintah berikut (contoh untuk g++):
 
    ```bash
@@ -35,7 +40,7 @@ ArchanaBerry Express adalah library web minimalis tetapi fitur juga lengkap dan 
    ./nama_app
    ```
 
-3. **Membuat Rute**
+4. **Membuat Rute**
    Anda dapat membuat rute untuk menangani permintaan HTTP seperti contoh berikut:
 
 ```cpp
